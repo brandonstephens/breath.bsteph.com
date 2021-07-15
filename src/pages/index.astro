@@ -1,0 +1,34 @@
+---
+// js goes here
+let anchorClass = `text-gray-500 hover:text-yellow-400 border-b-2 border-gray-700`
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple breathing exercise to help stay calm.</title>
+    <link rel="stylesheet" type="text/css" href="/global.css">
+  </head>
+
+  <body class="bg-gray-800 px-16 py-32">
+    <div class="grid grid-rows-3 justify-center text-center gap-32">
+      <div class="space-y-4">
+          <h1 class="text-gray-100 font-thin text-6xl">Box Breathing</h1>
+          <p class="text-gray-500 font-extralight text-2xl">Inhale 4 sec, Hold 4 sec, Exhale 4 sec, Hold 4 sec, Repeat.</p>
+      </div>
+
+      <div class="flex justify-center items-center">
+        <div class="w-32 h-32 animate-breath">
+            <div class="absolute inline-flex rounded-full bg-yellow-500 opacity-5 w-full h-full animate-ping" /> 
+            <div class="relative inline-flex w-32 h-32 bg-yellow-400 rounded-full" />
+        </div>
+      </div>
+
+      <div class="text-gray-700 font-light">
+        Made by <a class={anchorClass} href="https://brandonstephens.me">Brandon</a>. If you find this project useful you can <a class={anchorClass} href="https://ko-fi.com/G2G33AMQO">donate</a>.
+      </div>
+    </div>
+  </body>
+</html>
+
